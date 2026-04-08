@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Testimonials | HWASUNG MOBILITY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed": "#261900",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#c5a059",
+                    "surface-container-low": "#f4f4f0",
+                    "tertiary-container": "#c5a059",
+                    "on-error": "#ffffff",
+                    "surface-container": "#eeeeea",
+                    "outline": "#7f7667",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f1f1ed",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#d1c5b4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1a1c1a",
+                    "on-surface": "#1a1c1a",
+                    "surface-dim": "#dadad6",
+                    "on-secondary-container": "#636262",
+                    "surface-container-highest": "#e2e3df",
+                    "surface": "#faf9f5",
+                    "on-surface-variant": "#4e4639",
+                    "inverse-primary": "#e9c176",
+                    "on-primary-fixed": "#261900",
+                    "primary": "#775a19",
+                    "inverse-surface": "#2f312e",
+                    "surface-tint": "#775a19",
+                    "surface-bright": "#faf9f5",
+                    "background": "#faf9f5",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#ffdea5",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-container-high": "#e8e8e4",
+                    "on-tertiary-container": "#4e3700",
+                    "tertiary-fixed": "#ffdea5",
+                    "tertiary": "#775a19",
+                    "secondary-container": "#e2dfde",
+                    "on-primary-container": "#4e3700",
+                    "secondary-fixed": "#e5e2e1",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-primary": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "surface-variant": "#e2e3df"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
+        h1, h2, h3, .serif { font-family: 'Newsreader', serif; letter-spacing: -0.02em; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .fill-icon { font-variation-settings: 'FILL' 1; }
+        .magnetic-hover:hover { transform: translate(-2px, -2px); }
+        .atmospheric-glow-hover:hover { box-shadow: 0 0 40px 0 rgba(26, 28, 26, 0.05); }
+        .gold-gradient { background: linear-gradient(45deg, #775a19, #c5a059); }
+        
+        /* Modal Transitions */
+        #enquire-panel {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #enquire-overlay {
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+<!-- Enquire Slide-over Panel -->
+<div class="fixed inset-0 bg-on-background/40 backdrop-blur-sm z-[60] opacity-0 pointer-events-none" id="enquire-overlay" onclick="toggleEnquire()"></div>
+<div class="fixed top-0 right-0 h-full w-full max-w-md bg-surface-bright z-[70] translate-x-full shadow-2xl flex flex-col" id="enquire-panel">
+<div class="p-8 flex justify-between items-center border-b border-outline-variant/20">
+<span class="font-label uppercase tracking-widest text-xs font-bold text-primary">Inquiry Portal</span>
+<button class="p-2 hover:bg-surface-container-low transition-colors" onclick="toggleEnquire()">
+<span class="material-symbols-outlined text-on-surface-variant">close</span>
+</button>
+</div>
+<div class="flex-1 p-10 overflow-y-auto">
+<h2 class="text-4xl font-light mb-2">Request <span class="italic text-primary">Consultation</span></h2>
+<p class="text-on-surface-variant text-sm mb-12 font-body leading-relaxed">Our specialists are ready to discuss your specific infrastructure and mobility integration requirements.</p>
+<form class="space-y-8">
+<div class="group relative">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body text-on-surface placeholder:text-outline/40 transition-all" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="group relative">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Organization</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body text-on-surface placeholder:text-outline/40 transition-all" placeholder="Global Logistics Corp" type="text"/>
+</div>
+<div class="group relative">
+<label class="block text-[10px] font-bold uppercase tracking-widest text-primary mb-2">Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-primary focus:ring-0 px-0 py-3 font-body text-on-surface placeholder:text-outline/40 transition-all resize-none" placeholder="How can Hwasung precision enhance your production?" rows="4"></textarea>
+</div>
+<button class="w-full gold-gradient text-on-primary py-5 font-medium tracking-wide shadow-lg hover:translate-y-[-2px] transition-all duration-300 mt-8" type="button">
+                Send Inquiry
+            </button>
+</form>
+</div>
+<div class="p-10 bg-surface-container-lowest border-t border-outline-variant/20">
+<p class="text-[10px] text-on-surface-variant/60 font-body uppercase tracking-[0.2em] mb-4">Direct Connection</p>
+<p class="font-serif text-primary">enquiry@hwasungmobility.com</p>
+</div>
+</div>
+<!-- TopAppBar Navigation -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 bg-[#faf9f5]/80 dark:bg-[#1a1a1a]/80 backdrop-blur-xl">
+<div class="text-xl font-serif tracking-tighter text-[#1a1a1a] dark:text-[#faf9f5]">HWASUNG MOBILITY</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Home</a>
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Showcase</a>
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Technical</a>
+<a class="text-[#775a19] dark:text-[#c5a059] border-b border-[#c5a059] pb-1 hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Testimonials</a>
+</div>
+<button class="gold-gradient text-on-primary px-8 py-3 font-medium transition-all duration-300 ease-out hover:translate-y-[-2px] active:translate-y-[0px] shadow-sm" onclick="toggleEnquire()">
+        Enquire
+    </button>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Branding Section -->
+<section class="px-6 md:px-12 mb-24 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div class="max-w-2xl">
+<span class="block font-label uppercase tracking-[0.1em] text-primary mb-4 text-xs font-semibold">Voice of Excellence</span>
+<h1 class="text-6xl md:text-8xl font-light text-on-surface leading-tight">Precision. Performance. <br/><span class="italic text-primary">Perspective.</span></h1>
+</div>
+<div class="max-w-xs pb-4">
+<p class="text-on-surface-variant font-body leading-relaxed">Hear from the industry leaders, engineers, and visionaries who have integrated Hwasung's precision mobility solutions into their infrastructure.</p>
+</div>
+</div>
+</section>
+<!-- Featured Impact Quote -->
+<section class="mb-32 bg-surface-container-low py-24 px-6 md:px-12">
+<div class="max-w-5xl mx-auto flex flex-col items-center text-center">
+<div class="mb-8 text-primary">
+<span class="material-symbols-outlined text-5xl fill-icon" data-icon="format_quote">format_quote</span>
+</div>
+<h2 class="text-3xl md:text-5xl italic font-light leading-snug mb-10 text-on-surface">
+                "The integration of Hwasung's EV chassis components has reduced our assembly cycle by 14%, setting a new benchmark for our luxury fleet production."
+            </h2>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 mb-4 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close-up professional portrait of a senior automotive engineer in a clean minimalist laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKE9PWbSXor4yzT-kMx2Eoj3bCg4oI8zAXL8QwzB7ulFa5KUOReh4KibuuiEIY88dYfASlMGpuIhkrVIr4l3S2jPPgHuhY_re8fgJKXShrS8xXovE8Oml5yHsiL4JnnPeigguDBZV1loU-k4bYxkVkZIlJ3j0UjBdd9J5sPG1qGoLWWsQQB4y-RMQ77jg9TXuY1IiO8DiGADmUqbNis8q2CkhyOXzir-mvLAwCieLMxmNpMUrSACT5wVrCUD1CRcYvLOv41mRz25S_"/>
+</div>
+<p class="font-label uppercase tracking-widest text-xs font-bold text-on-surface">Director of Engineering</p>
+<p class="font-serif text-primary text-lg">Elite Electric Motors, Germany</p>
+</div>
+</div>
+</section>
+<!-- Masonry Testimonial Grid -->
+<section class="px-6 md:px-12 max-w-7xl mx-auto mb-32">
+<div class="columns-1 md:columns-2 lg:columns-3 gap-12 space-y-12">
+<!-- Card 1 -->
+<div class="break-inside-avoid bg-surface-container-lowest p-10 transition-all duration-500 atmospheric-glow-hover">
+<div class="flex text-primary mb-6 gap-1">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+</div>
+<h3 class="text-2xl mb-4 text-on-surface font-light leading-relaxed">The tolerances we achieve with Hwasung parts are unparalleled. It's high-art in engineering.</h3>
+<p class="text-on-surface-variant font-body mb-8 text-sm leading-relaxed">Managing the logistics of ultra-high performance vehicles requires parts that don't just work, but excel under extreme stress. Hwasung is our only choice.</p>
+<div class="flex items-center gap-4 pt-6 border-t border-outline-variant/15">
+<div class="w-10 h-10 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Headshot of a modern CEO in a high-end office with soft bokeh lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnVako5zC56dO7IeQK-t8d6M37Jb0KJwIRkRRMYA2oBag_fj8LRbvK_ac0Ib5uX0xJwQgzVG9Ea9NFHqA-7qeF8jJRtpyJNuvt8xAj71esbqtDtVURWW_kRKPrO0TCe-fTUNoEoiNHnjuwMdTzN-jwfHeoRJAXRSp2LhUMK0eiIZXxXRHwPMyiPE_Kt0LpppVsxtuJ9HvxVb9dUYL2AAtczXi89mHpvMTYOtR9iVBYVuQnLqnSbH5NBTlNig9WuXRf0KMBJkJ_FYPJ"/>
+</div>
+<div>
+<p class="text-xs font-bold font-label uppercase tracking-wider">Arthur Vance</p>
+<p class="text-xs text-primary font-serif">CEO, Aerostrike Mobility</p>
+</div>
+</div>
+</div>
+<!-- Card 2 (Image Focused) -->
+<div class="break-inside-avoid relative group overflow-hidden">
+<img class="w-full aspect-[4/5] object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-tech manufacturing floor with precision robotic arms and a warm golden ambient light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMwuG-bQwoTNCtwVfHVdoJsiQbgwhavp4Zlu30DU_ZHoC9s7Zgr0czQpqw4vZkPRUNoxj_tAups_44sQkJ7sOI_MBOV29AyDEIwsEX8BfL3Ay5VDKERGFnrauxcW5Pd_L4wRszUgp58jhZYcPhGHFCN8n46aFWTVm5qm-eKCVQ7uzbWMkD_T-ygBLTA5H3nigr9ddhX6B9s6_k9eEvdZtueqbU6vZSseH59S4CoFgPR8by89ctcA3YWISQgr3JiCrn2i-iPCwMbnfs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 to-transparent flex flex-col justify-end p-10">
+<span class="text-primary-container text-xs font-bold font-label uppercase tracking-widest mb-4">Case Study #402</span>
+<h3 class="text-surface text-3xl font-light leading-tight">Efficiency redefined through automated precision.</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="break-inside-avoid bg-surface-container-low p-10 transition-all duration-500 atmospheric-glow-hover">
+<div class="flex text-primary mb-6 gap-1">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+</div>
+<h3 class="text-2xl mb-4 text-on-surface font-light leading-relaxed">Sustainable sourcing that doesn't compromise on durability.</h3>
+<p class="text-on-surface-variant font-body mb-8 text-sm leading-relaxed">Transitioning our city fleet to Hwasung’s modular platform was the most strategic decision we made this decade. The long-term durability is simply unmatched.</p>
+<div class="flex items-center gap-4 pt-6 border-t border-outline-variant/15">
+<div class="w-10 h-10 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Professional woman in a minimalist studio setting with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUZe1mI5UnUOF9ds4UquodurxcCFV4ZWgwXLPRn1zCoPMoLiNSpFgt2d59NjBuGTHArOzvw-KXf7NRL7lkHzbeggwzfozrJpTlQszD5C5_tUospswliQbQ8xJ4bCAzCUVZ1-oqgANomDwmaAjj7XzbiyR1ayGi6l-RZy4fI5gAfrsbzPN3DXnIWWNEoaWu_g1j-7XKkwe7pntjjTlx832N_ydjspe1Q3-J8M5XPc_ZZ_R_7QGBkphpB_iwxfCPrsiFLuQbkpOydvaw"/>
+</div>
+<div>
+<p class="text-xs font-bold font-label uppercase tracking-wider">Elena Rossi</p>
+<p class="text-xs text-primary font-serif">Urban Planning lead, Milan</p>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="break-inside-avoid bg-surface-container-lowest p-10 transition-all duration-500 atmospheric-glow-hover">
+<div class="flex text-primary mb-6 gap-1">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm" data-icon="star">star</span>
+</div>
+<h3 class="text-2xl mb-4 text-on-surface font-light leading-relaxed">Impeccable customer service matching the hardware.</h3>
+<p class="text-on-surface-variant font-body mb-8 text-sm leading-relaxed">The technical support provided by the Hwasung engineering team during our integration phase was world-class. They treat your project as their own.</p>
+<div class="flex items-center gap-4 pt-6 border-t border-outline-variant/15">
+<div class="w-10 h-10 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Portrait of a male tech entrepreneur with a thoughtful expression in a workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKsTTl35e0Tdlpz-LlnuWMh1g-vqF-ct90jwPz5BEnaoBqUiiRMzzUcqjTgL7Kb0o97PqR1uLmWLro_nGivsTcus4u8FH-qgLYNCt9sQGJxexLYqTxiDFJ5Tram6fRZzZ0AVI-ottijgjw11_wb31fHAHJ4gYg7Mn3cy_bucoJs_jK4vjoNreouaH7tmdltjwf1T8uO6FfXhwhJ44KYAuh5eW0NG8OkZXd02Ut1Gp6anFqzRfGDn5_mMJKZRirmmu41YV09vj5MDGZ"/>
+</div>
+<div>
+<p class="text-xs font-bold font-label uppercase tracking-wider">Marcus Thorne</p>
+<p class="text-xs text-primary font-serif">CTO, Flux Logistics</p>
+</div>
+</div>
+</div>
+<!-- Card 5 (Visual) -->
+<div class="break-inside-avoid bg-[#1a1c1a] p-10 flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="verified">verified</span>
+<div>
+<h3 class="text-surface text-4xl font-light mb-4">98%</h3>
+<p class="text-surface-variant font-body text-sm uppercase tracking-widest">Partner retention rate over 10 years of manufacturing excellence.</p>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="break-inside-avoid bg-surface-container-low p-10 transition-all duration-500 atmospheric-glow-hover">
+<div class="flex text-primary mb-6 gap-1">
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+<span class="material-symbols-outlined text-sm fill-icon" data-icon="star">star</span>
+</div>
+<h3 class="text-2xl mb-4 text-on-surface font-light leading-relaxed">The gold standard of mobility engineering.</h3>
+<p class="text-on-surface-variant font-body mb-8 text-sm leading-relaxed">We evaluated five different manufacturers for our new chassis line. Hwasung was the only one that met our rigorous safety and weight-distribution requirements without compromise.</p>
+<div class="flex items-center gap-4 pt-6 border-t border-outline-variant/15">
+<div class="w-10 h-10 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Detailed close up of an engineer's hands working on a high-precision metal component" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACLsOvsr6pLxB8VjYEKe2Nh9fUKLpCcJ_przO-UnKAtJ8lP1Fpk1sYivH8xgYGI1qzlyUu-RVwQbh3pMnRkPkyK3mnGUfu40fFBMFTOEhzXXntnF4vlX8e8zWcji7bXL4FyHqSfhr5Tj99kLrRHm9TE-La-69LTpZa9Rw5KP-z8aaHxA5WaRA0OQPEMc6FlqPwiXuN106qnoRbjrlRbxkM8yP625nTypYgUyEdSazqY1dMmy9cMV8CQkASlz64ZG1J-fetjmHk-g2i"/>
+</div>
+<div>
+<p class="text-xs font-bold font-label uppercase tracking-wider">Sarah Chen</p>
+<p class="text-xs text-primary font-serif">Lead Designer, Veloce Auto</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action -->
+<section class="max-w-7xl mx-auto px-6 md:px-12 mb-32">
+<div class="relative w-full h-[500px] flex items-center justify-center text-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30 grayscale" data-alt="Abstract smooth architectural curves in a soft bone white with subtle shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHCK6h12xuKP8lDM2wwFRF3_iFagiFy94m1qCgqmj-k66ujckB00bg0h3C-rvDooUuwaN3MxW-0xjNp7vWI3c1QVWdWslYnsUhXdpXBK7FUHQ27KxBcf3J0O0QuwE-ZwNlvtr83o0fG8f8ZpF2jQ1XmHtmiiIh-i0TsAnQ6pra4uLbINPTktNT8XAzfL3T8cKsOVTTlA5g6S7Efnl4gvAEYsqOg-1gO_IPAGYsOqgLuyFQ52u1vP4GGkM8nQ__tZ_btxa2P8Vv4a1Z"/>
+</div>
+<div class="relative z-10 max-w-3xl px-6">
+<h2 class="text-4xl md:text-6xl font-light text-on-surface mb-8">Ready to elevate your <span class="italic font-serif">manufacturing standard?</span></h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="gold-gradient text-on-primary px-12 py-5 font-medium hover:translate-y-[-2px] transition-all duration-300 shadow-xl w-full md:w-auto" onclick="toggleEnquire()">
+                        Start Partnership
+                    </button>
+<button class="border border-outline-variant/30 text-on-surface px-12 py-5 font-medium font-serif hover:bg-surface-container-low transition-all duration-300 w-full md:w-auto">
+                        View Showcase
+                    </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-6 md:px-12 py-16 flex flex-col md:flex-row justify-between items-start gap-8 bg-[#f4f4f0] dark:bg-[#121212]">
+<div class="flex flex-col gap-6">
+<div class="text-2xl font-serif text-[#1a1a1a] dark:text-[#faf9f5]">HWASUNG MOBILITY</div>
+<p class="max-w-xs text-on-surface-variant text-sm font-body leading-relaxed">
+            © 2024 HWASUNG MOBILITY INDIA MANUFACTURING PVT. LTD. PRECISION ENGINEERING.
+        </p>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-label uppercase tracking-[0.15em] text-[10px] font-bold text-primary">Company</span>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 text-sm" href="#">Manufacturing Excellence</a>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 text-sm" href="#">Testimonials</a>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 text-sm" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label uppercase tracking-[0.15em] text-[10px] font-bold text-primary">Legal</span>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 text-sm" href="#">Privacy Policy</a>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 text-sm" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+    function toggleEnquire() {
+        const panel = document.getElementById('enquire-panel');
+        const overlay = document.getElementById('enquire-overlay');
+        const isOpening = panel.classList.contains('translate-x-full');
+        
+        if (isOpening) {
+            panel.classList.remove('translate-x-full');
+            overlay.classList.remove('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = 'hidden';
+        } else {
+            panel.classList.add('translate-x-full');
+            overlay.classList.add('opacity-0', 'pointer-events-none');
+            document.body.style.overflow = '';
+        }
+    }
+</script>
+</body></html>

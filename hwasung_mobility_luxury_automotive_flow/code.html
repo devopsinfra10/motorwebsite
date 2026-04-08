@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed": "#261900",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#c5a059",
+                    "surface-container-low": "#f4f4f0",
+                    "tertiary-container": "#c5a059",
+                    "on-error": "#ffffff",
+                    "surface-container": "#eeeeea",
+                    "outline": "#7f7667",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f1f1ed",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#d1c5b4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1a1c1a",
+                    "on-surface": "#1a1c1a",
+                    "surface-dim": "#dadad6",
+                    "on-secondary-container": "#636262",
+                    "surface-container-highest": "#e2e3df",
+                    "surface": "#faf9f5",
+                    "on-surface-variant": "#4e4639",
+                    "inverse-primary": "#e9c176",
+                    "on-primary-fixed": "#261900",
+                    "primary": "#775a19",
+                    "inverse-surface": "#2f312e",
+                    "surface-tint": "#775a19",
+                    "surface-bright": "#faf9f5",
+                    "background": "#faf9f5",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#ffdea5",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-container-high": "#e8e8e4",
+                    "on-tertiary-container": "#4e3700",
+                    "tertiary-fixed": "#ffdea5",
+                    "tertiary": "#775a19",
+                    "secondary-container": "#e2dfde",
+                    "on-primary-container": "#4e3700",
+                    "secondary-fixed": "#e5e2e1",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-primary": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "surface-variant": "#e2e3df"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .tracking-editorial { letter-spacing: -0.02em; }
+        .tracking-label { letter-spacing: 0.1em; }
+        .glass-nav { backdrop-filter: blur(20px); }
+        .gold-gradient { background: linear-gradient(45deg, #775a19, #c5a059); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar Shell -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-12 py-6 bg-[#faf9f5]/80 dark:bg-[#1a1a1a]/80 backdrop-blur-xl">
+<div class="text-xl font-serif tracking-tighter text-[#1a1a1a] dark:text-[#faf9f5]">HWASUNG MOBILITY</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#775a19] dark:text-[#c5a059] border-b border-[#c5a059] pb-1 hover:translate-y-[-1px] transition-all duration-300 ease-out font-medium" href="#">Home</a>
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Showcase</a>
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Technical</a>
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Testimonials</a>
+</div>
+<button class="gold-gradient text-on-primary px-8 py-3 font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out">
+            Enquire
+        </button>
+</nav>
+<main class="pt-24">
+<!-- Hero Section: Split Screen -->
+<section class="min-h-[921px] flex flex-col md:flex-row items-center overflow-hidden">
+<!-- Left: Value Proposition -->
+<div class="w-full md:w-1/2 px-12 py-20 md:py-0 flex flex-col justify-center items-start z-10">
+<span class="font-label uppercase tracking-label text-primary mb-6 text-sm font-semibold">Engineering Precision</span>
+<h1 class="font-serif text-6xl md:text-8xl leading-[1.05] tracking-editorial text-on-surface mb-8">
+                    The Art of <br/>
+<span class="italic">Silent Power.</span>
+</h1>
+<p class="text-on-surface-variant max-w-md text-lg mb-12 leading-relaxed">
+                    Hwasung Mobility India Manufacturing defines the future of luxury electric powertrains through uncompromising Korean engineering and Indian craftsmanship.
+                </p>
+<div class="flex gap-6">
+<button class="gold-gradient text-on-primary px-10 py-4 font-semibold hover:translate-y-[-2px] transition-transform duration-300 shadow-sm">
+                        Explore Platforms
+                    </button>
+<button class="border border-outline-variant/30 px-10 py-4 font-serif text-lg hover:bg-surface-container-low transition-colors duration-300">
+                        View Heritage
+                    </button>
+</div>
+</div>
+<!-- Right: 3D Render Placeholder -->
+<div class="w-full md:w-1/2 h-[512px] md:h-screen relative overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale contrast-125" data-alt="Hyper-realistic 3D render of a luxury electric vehicle chassis in a dark studio, metallic champagne accents, soft cinematic rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq8z4izzRT7DlHh87bFteUFCHhExGMkGgm2_puhPWsCAknLhUG2qI816PpbbEWsJJxQQ0R_LAj8rBw89Ty0GVWlaRQQNaS6IVb3BDTLVTPVMrFlDK-IbCvDJhX_FXw5zyPtpWdjJkLbhT8kVRqViDFolknGOcMOdyG080BjfXp3Er50Ygs77_3tZRzwqIfQDwKIa1tvopR3NOoNctNtg0WD8PAvwFIqNcU6OLS0AuhYKTrCJcePMSbqPzzFp1ZxgW098hIvVjtHc_S"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-transparent to-transparent hidden md:block"></div>
+<div class="absolute bottom-12 right-12 flex flex-col items-end">
+<span class="text-xs font-label uppercase tracking-label text-on-surface-variant/60 mb-2">Technical Spec</span>
+<span class="font-serif text-3xl italic">P-Series Gen III</span>
+</div>
+</div>
+</section>
+<!-- Social Proof: Marquee -->
+<section class="py-16 bg-surface-container-low overflow-hidden whitespace-nowrap">
+<div class="px-12 mb-8">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant/40">Global Partners &amp; Industry Recognition</span>
+</div>
+<div class="flex items-center gap-24 px-12 opacity-40 hover:opacity-100 transition-opacity duration-700">
+<div class="font-serif text-2xl font-bold tracking-tighter">AUTOMOTIVE NEWS</div>
+<div class="font-serif text-2xl font-bold tracking-tighter">FORBES TECH</div>
+<div class="font-serif text-2xl font-bold tracking-tighter">WIRED INDUSTRIAL</div>
+<div class="font-serif text-2xl font-bold tracking-tighter">LUXURY MOBILITY</div>
+<div class="font-serif text-2xl font-bold tracking-tighter">PRECISION TODAY</div>
+<div class="font-serif text-2xl font-bold tracking-tighter">ENGINEERING WORLD</div>
+<div class="font-serif text-2xl font-bold tracking-tighter">GLOBAL LOGISTICS</div>
+</div>
+</section>
+<!-- Showcase: Asymmetric Bento Grid -->
+<section class="py-32 px-12 bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-serif text-5xl md:text-7xl tracking-editorial mb-8 leading-tight">Crafting the core of <br/><span class="italic text-primary">High-Performance</span></h2>
+</div>
+<div class="max-w-xs text-right">
+<p class="text-sm text-on-surface-variant leading-relaxed">Our manufacturing excellence is built on a foundation of zero-defect tolerance and bespoke engineering solutions.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 auto-rows-[400px]">
+<!-- Feature 1: Large -->
+<div class="md:col-span-8 relative group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Atmospheric shot of an automated robotic arm precision-welding a car frame, bright sparks flying, industrial blue and gold tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf9lG1hZewq643IAR81mgx0eS6fVIlotNeHut47U51fYiBLXe_HodU-JtQuE9dque91g4AfKfB4p740f7PARUzGqgbO__ATwmg32ZfwEq95yMR8iyqW5h48muNyjQnJY5UKx5xHbAKbAf__n7zArtCwkoZOcl5z9oGTxxF1x91tPuwuAX-sfAQLm2GXb2stM29nSdvLpcvlhr_5vxk9qo6MdvYav19Sf4zlsC9acSeAdw7bB8CKRtFADOq-724TKW5rqRyJbzISm0I"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
+<div class="absolute bottom-10 left-10 text-white">
+<span class="font-label text-xs uppercase tracking-label mb-2 block">Robotic Precision</span>
+<h3 class="font-serif text-4xl italic">Automated Assemblies</h3>
+</div>
+</div>
+<!-- Feature 2: Tall -->
+<div class="md:col-span-4 relative group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Macro close-up of a brushed aluminum engine component with complex geometries and the Hwasung logo engraved, soft bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3dfHhKWBsclqJD0Q7eBI3Z2og8YACugmnn9Pzbo30vYHSfxwNDt-Mf1KL9U-7M-ByS_fTaO9H2lEsc5fSaiHXnEsQxZPEN2XwAX5dOb_sIgzDoz4nVFHwEsAHeu-kMOPPPqztul_MWLbwl53GtFx1aJX5LwbUW1GnYo1Yra4ugu1-O-b_ptmu-JPrAYH4E2WIrzQMkxyR8s7vPA09ckrutiR-PHEvbwKGkssQh2W8Irh7-PXAeN17JLCTGuhnOg5j3nC8TA_mrxni"/>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-500"></div>
+<div class="absolute top-10 right-10 text-right text-white">
+<span class="font-label text-xs uppercase tracking-label mb-2 block">Material Science</span>
+<h3 class="font-serif text-3xl">Advanced Alloys</h3>
+</div>
+</div>
+<!-- Feature 3: Small -->
+<div class="md:col-span-4 relative group overflow-hidden">
+<div class="absolute inset-0 bg-primary-container p-12 flex flex-col justify-end">
+<span class="text-on-primary-container font-label text-xs uppercase tracking-label mb-4">The Standard</span>
+<h3 class="text-on-primary-container font-serif text-3xl leading-tight">Bespoke <br/>Manufacturing <br/>Intelligence</h3>
+<div class="mt-8">
+<span class="material-symbols-outlined text-4xl text-on-primary-container/40">rocket_launch</span>
+</div>
+</div>
+</div>
+<!-- Feature 4: Medium -->
+<div class="md:col-span-8 relative group overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Luxury car headlights glowing at dusk on a modern architectural background, moody lighting, champagne gold reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHM_yB-EWMBa968j7sfpaGHf2bOXz8MHTyznHT-Y_9TvXWqkt0AlOWUlj8n_3XJPrMOF7NS-2TaSwqRLlE2qxRdgAmSc-sVke61Fa_QUAxeOZkF2wm39sCekFVkIPVh2JS-AqYBVO8GHFiQmzJwJ46_GWZawKKFm3eW20nXT8ry8CaXJZ5UTQZM-8VuArU94Wz1_vI0J3KFBGC-gIAZeYQsZfsH16jMcSKRszYzmWSFPqDmepTjgIPWppgNmtjdzPQkhtSi5Iyo6K0"/>
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="absolute bottom-10 right-10 text-right text-white">
+<span class="font-label text-xs uppercase tracking-label mb-2 block">Design Language</span>
+<h3 class="font-serif text-4xl italic">Aerodynamic Sculpting</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Excellence Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="px-12 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<img class="w-full aspect-[4/5] object-cover grayscale" data-alt="Clean-room environment laboratory with technicians in white suits inspecting high-tech battery cells, soft futuristic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfkBd48Pw-ndLyq3N4c3yiQEKSluKOqyt279vRxZlbeU9qRlyRzBq4cx91KeGl32qF5Bq3O1QFH5gI2h6BPZ5Gm5fPECU-NavH6LuLZZqgBWfahTylpX1ML-jripzdXCdztJe-jKmLFa22hhovC_bRVCWXgg-ZcXv1d-0wJlpDpzrnUNtI4K50v-rMeYw4YfpPdFUTevP1UvDox_bxYeAk-Y230_tOzkINk03-qdH4_r4P-Tihc_oL6xGwL8WTfgLB7P3_HbRQ2ys1"/>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label text-primary uppercase tracking-label text-sm mb-6 block">Our Methodology</span>
+<h2 class="font-serif text-6xl tracking-editorial mb-10 leading-[1.1]">The Precision <br/>Atelier Philosophy.</h2>
+<div class="space-y-12">
+<div class="flex gap-8 group">
+<span class="font-serif text-primary text-4xl opacity-50">01</span>
+<div>
+<h4 class="font-serif text-2xl mb-2 group-hover:text-primary transition-colors duration-300">Intelligent Prototyping</h4>
+<p class="text-on-surface-variant leading-relaxed">Virtual simulations integrated with physical stress testing to ensure absolute reliability in diverse Indian climates.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<span class="font-serif text-primary text-4xl opacity-50">02</span>
+<div>
+<h4 class="font-serif text-2xl mb-2 group-hover:text-primary transition-colors duration-300">Sustainability in Motion</h4>
+<p class="text-on-surface-variant leading-relaxed">Reducing environmental footprint through closed-loop manufacturing and ethically sourced rare earth minerals.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<span class="font-serif text-primary text-4xl opacity-50">03</span>
+<div>
+<h4 class="font-serif text-2xl mb-2 group-hover:text-primary transition-colors duration-300">Human-Centric UI</h4>
+<p class="text-on-surface-variant leading-relaxed">The interface between machine and operator is designed for intuitive mastery and ergonomic perfection.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Enquire CTA -->
+<section class="py-40 bg-surface flex flex-col items-center justify-center text-center px-12">
+<h2 class="font-serif text-5xl md:text-7xl mb-12 tracking-editorial italic">Collaborate with the Future.</h2>
+<p class="text-on-surface-variant max-w-xl text-lg mb-12 leading-relaxed">
+                Join our network of innovators and redefine the boundaries of high-end mobility manufacturing in the Asian market.
+            </p>
+<button class="gold-gradient text-on-primary px-16 py-5 font-bold hover:scale-105 transition-transform duration-300">
+                INITIATE PARTNERSHIP
+            </button>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-start gap-8 bg-[#f4f4f0] dark:bg-[#121212]">
+<div class="flex flex-col gap-6">
+<div class="text-2xl font-serif text-[#1a1a1a] dark:text-[#faf9f5]">HWASUNG MOBILITY</div>
+<p class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 max-w-xs font-medium text-sm">
+                Precision engineering for the new era of high-end mobility solutions.
+            </p>
+<div class="text-xs font-label uppercase tracking-label text-[#1a1a1a]/40 dark:text-[#faf9f5]/40 mt-4">
+                © 2024 HWASUNG MOBILITY INDIA MANUFACTURING PVT. LTD. PRECISION ENGINEERING.
+            </div>
+</div>
+<div class="grid grid-cols-2 gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-[#775a19] dark:text-[#c5a059] mb-2">Company</span>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 font-medium" href="#">Manufacturing Excellence</a>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 font-medium" href="#">Sustainability</a>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 font-medium" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-[#775a19] dark:text-[#c5a059] mb-2">Legal</span>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 font-medium" href="#">Privacy Policy</a>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 font-medium" href="#">Terms of Service</a>
+<a class="text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-200 font-medium" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

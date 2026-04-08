@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#775a19",
+                    "on-tertiary-fixed": "#261900",
+                    "surface": "#faf9f5",
+                    "on-primary-fixed": "#261900",
+                    "surface-dim": "#dadad6",
+                    "surface-container-highest": "#e2e3df",
+                    "surface-variant": "#e2e3df",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f1f1ed",
+                    "surface-bright": "#faf9f5",
+                    "error-container": "#ffdad6",
+                    "outline": "#7f7667",
+                    "secondary-container": "#e2dfde",
+                    "on-primary": "#ffffff",
+                    "background": "#faf9f5",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-surface": "#1a1c1a",
+                    "on-surface-variant": "#4e4639",
+                    "on-secondary-fixed-variant": "#474746",
+                    "inverse-primary": "#e9c176",
+                    "primary": "#775a19",
+                    "surface-container-low": "#f4f4f0",
+                    "surface-container-high": "#e8e8e4",
+                    "primary-fixed": "#ffdea5",
+                    "on-error": "#ffffff",
+                    "primary-container": "#c5a059",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#636262",
+                    "on-background": "#1a1c1a",
+                    "inverse-surface": "#2f312e",
+                    "tertiary-container": "#c5a059",
+                    "surface-container": "#eeeeea",
+                    "tertiary-fixed": "#ffdea5",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "primary-fixed-dim": "#e9c176",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-container": "#4e3700",
+                    "tertiary": "#775a19",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-primary-container": "#4e3700",
+                    "outline-variant": "#d1c5b4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .font-newsreader { font-family: 'Newsreader', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        
+        /* Custom Magnetic Hover Prep */
+        .magnetic-btn {
+            transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .magnetic-btn:hover {
+            transform: translate(2px, -2px);
+        }
+        .magnetic-btn span {
+            transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        .magnetic-btn:hover span {
+            transform: translate(-2px, 2px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-manrope selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f5]/80 dark:bg-[#1a1a1a]/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-full">
+<div class="text-2xl font-newsreader italic tracking-tighter text-[#1a1a1a] dark:text-[#faf9f5]">
+                PRECISION ATELIER
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#775a19] dark:text-[#c5a059] border-b border-[#775a19] dark:border-[#c5a059] pb-1 font-manrope font-light tracking-wide uppercase text-xs transition-opacity duration-300" href="#">Heritage</a>
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] opacity-70 hover:opacity-100 transition-opacity duration-300 font-manrope font-light tracking-wide uppercase text-xs" href="#">Craft</a>
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] opacity-70 hover:opacity-100 transition-opacity duration-300 font-manrope font-light tracking-wide uppercase text-xs" href="#">Innovation</a>
+<a class="text-[#1a1a1a] dark:text-[#faf9f5] opacity-70 hover:opacity-100 transition-opacity duration-300 font-manrope font-light tracking-wide uppercase text-xs" href="#">Inventory</a>
+</div>
+<button class="magnetic-btn bg-gradient-to-br from-[#775a19] to-[#c5a059] px-8 py-3 text-on-primary font-manrope font-light tracking-widest uppercase text-xs flex items-center group">
+<span class="inline-block">Enquire</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Cinematic Split-Screen Hero -->
+<section class="min-h-screen flex flex-col md:flex-row">
+<!-- Left Side: Value Proposition -->
+<div class="w-full md:w-1/2 bg-surface flex flex-col justify-center px-12 md:px-24 py-32">
+<div class="max-w-xl">
+<p class="font-manrope text-[10px] tracking-[0.3em] uppercase text-primary mb-8 opacity-80">Evolution of Engineering</p>
+<h1 class="font-newsreader italic text-7xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter text-on-surface mb-12">
+                        The Future <br/>of Motion
+                    </h1>
+<p class="font-manrope font-light text-lg text-on-surface-variant max-w-md leading-relaxed mb-12">
+                        Precision-engineered mobility solutions that define the intersection of brutal performance and bespoke luxury craftsmanship.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="magnetic-btn bg-gradient-to-br from-[#775a19] to-[#c5a059] px-10 py-5 text-on-primary font-manrope font-light tracking-widest uppercase text-xs">
+<span>Explore Platforms</span>
+</button>
+<button class="magnetic-btn border border-outline-variant/15 px-10 py-5 font-newsreader italic text-lg text-on-surface hover:bg-surface-container-low transition-colors duration-300">
+<span>Watch The Film</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Side: 3D Render Canvas -->
+<div class="w-full md:w-1/2 bg-[#1a1c1a] relative overflow-hidden group">
+<img alt="Sleek metallic vehicle chassis" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-1000 ease-out" data-alt="Close-up of a high-tech metallic vehicle chassis with carbon fiber accents, dramatic low-key studio lighting on deep charcoal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk_4s9of_11QOPA3dzltOqMt8Sn_aBUWoXM7-EqCF4bGQx8T-xLmKV0x9U6nzoSb4AxdQwn5DFl22NWkP1QNP519wVw7HaQKuPz3JJgBimxPn7CKJgGIovNpg594lUPGeyepOFt6O6YSubjYsoHUsqDUXf0kzXOwcRYmhfKHrh2S1wLp9vk0pmbFdUD0HL411sYdxUi6tzgPy4W61d6Tes20bqG9GBCXg-rIOupMCnynPuZXFU8igjfKtPQeBYqAhCJ1xFjOqUYvAF"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1a1c1a] via-transparent to-transparent opacity-40"></div>
+<!-- Floating Info Card -->
+<div class="absolute bottom-12 left-12 right-12 p-8 bg-[#ffffff]/10 backdrop-blur-xl border border-white/10">
+<div class="flex justify-between items-end">
+<div>
+<span class="font-manrope text-[10px] tracking-widest uppercase text-primary-fixed-dim">Platform Alpha-7</span>
+<h3 class="font-newsreader italic text-3xl text-white mt-2">Kinetic Integrity</h3>
+</div>
+<div class="text-right">
+<span class="font-manrope text-[10px] tracking-widest uppercase text-white/50 block">Chassis Rigidity</span>
+<span class="font-manrope text-2xl text-white font-light tracking-tighter">42,000 Nm/deg</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- As Seen In Marquee -->
+<section class="bg-surface-container-low py-20 overflow-hidden">
+<div class="px-12 mb-12">
+<h2 class="font-manrope text-[10px] tracking-[0.5em] uppercase text-center text-outline/60">Global Recognition</h2>
+</div>
+<div class="flex whitespace-nowrap gap-24 items-center opacity-40 grayscale px-12">
+<span class="font-newsreader italic text-3xl tracking-tighter">Technica</span>
+<span class="font-manrope font-extrabold text-2xl tracking-tight">INDUSTRIAL DIGEST</span>
+<span class="font-newsreader font-bold text-3xl tracking-widest uppercase">Vanguard</span>
+<span class="font-manrope font-light text-3xl tracking-[0.2em] uppercase italic">Wired.</span>
+<span class="font-newsreader italic text-3xl tracking-tighter">The Global Engineer</span>
+<span class="font-newsreader italic text-3xl tracking-tighter">Technica</span>
+<span class="font-manrope font-extrabold text-2xl tracking-tight">INDUSTRIAL DIGEST</span>
+<span class="font-newsreader font-bold text-3xl tracking-widest uppercase">Vanguard</span>
+</div>
+</section>
+<!-- Asymmetric Editorial Grid -->
+<section class="py-32 px-12 bg-surface">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-end">
+<div class="md:col-span-7 relative">
+<div class="absolute -top-12 -left-12 font-newsreader italic text-[12rem] text-primary/5 select-none pointer-events-none">01</div>
+<img alt="Manufacturing facility" class="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Interior of a ultra-modern white manufacturing facility with robotic arms assembling components under soft diffuse daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnoq7zxJVaDFbqOJ6Vyw6Erwt6TK-MkOj2ax54CQ0KkYgM_0wZ6CPiDTl6Iszf12GYm0k0OXL-yyv8rxU0jnscNixjhJ_Iv62e5F8o7iA5bouNP61JEDBdXfx1Gu0YMNSWdUgDIKofP7Y_5FzDCZ5n8KkwPpbGM7Wp-GZMfdEzPNnE5gf0SBR6kxMZNeGaQVaxbcuxXrX4O8n_oEVOsGh19jzS9CG-YDLywVff9p4VFfMvXbD5CS7hQYyafpFYMgDizf1DBMdzDN24"/>
+</div>
+<div class="md:col-span-5 pb-12">
+<span class="font-manrope text-[10px] tracking-widest uppercase text-primary mb-6 block">The Atelier</span>
+<h2 class="font-newsreader italic text-6xl leading-tight mb-8">Where hand-crafted <br/>legacy meets <br/>autonomous future.</h2>
+<p class="font-manrope font-light text-on-surface-variant leading-relaxed mb-12">
+                        We don't just assemble vehicles. We curate movement. Each component is machined to a tolerance of microns, then finished by artisans who have spent decades perfecting the haptics of luxury.
+                    </p>
+<button class="magnetic-btn border border-outline-variant/30 px-10 py-5 font-manrope font-light tracking-widest uppercase text-xs">
+<span>The Manufacturing Process</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Product Bento Grid -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[300px]">
+<div class="md:col-span-2 md:row-span-2 bg-[#1a1c1a] p-12 flex flex-col justify-between group overflow-hidden">
+<div class="z-10">
+<span class="font-manrope text-[10px] tracking-widest uppercase text-primary-fixed-dim">Project Mercury</span>
+<h3 class="font-newsreader italic text-5xl text-white mt-4">Aerodynamic <br/>Dominance</h3>
+</div>
+<img alt="Car detail" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-1000" data-alt="Macro photography of carbon fiber aerodynamic wing on a supercar, matte finish with sharp light edges" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaPbp9D70jurjAkapdWQf97PGgXnjPyJfgBRZTo15vmMhGb8_gp47zBOHBnLFgX5TNnf0tpmtKawxjnobV_VbGdNN3pJWyDP-KWhNV6xSBTV2O0WFkEU60iBxFu2wznjrKq6Fy4Tsw_2rxoXidnFN7XKHQWCXznWTaCkpui8m1nzSKLaPn6HS9_lmkOsorb9zFU769tLxK-zSElLtCNMlps_ftZdAEoMg2C6dFh4OzEr_k1OTjL9sPOfZk2yyUaxlI3-RbSKZ4EF-t"/>
+<button class="z-10 self-start magnetic-btn font-manrope text-[10px] tracking-widest uppercase text-white/50 border-b border-white/20 pb-1 hover:text-white hover:border-white transition-all">
+<span>View Technical Specs</span>
+</button>
+</div>
+<div class="md:col-span-2 bg-surface p-12 flex flex-col justify-center">
+<span class="font-manrope text-[10px] tracking-widest uppercase text-primary mb-2">Power Source</span>
+<h3 class="font-newsreader italic text-4xl mb-4">Dual-Core Induction</h3>
+<p class="font-manrope font-light text-sm text-on-surface-variant leading-relaxed">0-100 km/h in 1.9 seconds. Silent. Pure. Unrelenting.</p>
+</div>
+<div class="bg-primary p-12 flex flex-col justify-end group">
+<span class="material-symbols-outlined text-white text-4xl mb-6" data-icon="electric_car">electric_car</span>
+<h4 class="font-newsreader italic text-2xl text-white">All-Electric Legacy</h4>
+</div>
+<div class="bg-surface p-12 flex flex-col justify-end border-l border-outline-variant/10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" data-icon="precision_manufacturing">precision_manufacturing</span>
+<h4 class="font-newsreader italic text-2xl">Bespoke Options</h4>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-48 px-12 text-center bg-surface relative overflow-hidden">
+<div class="max-w-3xl mx-auto relative z-10">
+<h2 class="font-newsreader italic text-7xl md:text-8xl tracking-tighter mb-12">Redefine your <br/>territory.</h2>
+<p class="font-manrope font-light text-on-surface-variant text-xl mb-12">Join the waitlist for the 2025 Inventory release.</p>
+<button class="magnetic-btn bg-gradient-to-br from-[#775a19] to-[#c5a059] px-16 py-6 text-on-primary font-manrope font-light tracking-[0.3em] uppercase text-xs">
+<span>Reserve My Allocation</span>
+</button>
+</div>
+<!-- Decorative Ghost Background Text -->
+<div class="absolute inset-0 flex items-center justify-center opacity-[0.03] select-none pointer-events-none">
+<span class="font-newsreader italic text-[30vw] tracking-tighter">Precision</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4f0] dark:bg-[#121212] w-full relative bottom-0">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-12 md:mb-0">
+<div class="text-xl font-newsreader text-[#1a1a1a] dark:text-[#faf9f5] mb-4">PRECISION ATELIER</div>
+<p class="font-manrope text-xs tracking-widest uppercase text-[#1a1a1a]/60 dark:text-[#faf9f5]/60">© 2024 Precision Atelier. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="font-manrope text-sm tracking-widest uppercase text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-colors duration-300" href="#">Sustainability</a>
+<a class="font-manrope text-sm tracking-widest uppercase text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-colors duration-300" href="#">Contact</a>
+<a class="font-manrope text-sm tracking-widest uppercase text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-colors duration-300" href="#">Legal</a>
+<a class="font-manrope text-sm tracking-widest uppercase text-[#1a1a1a]/60 dark:text-[#faf9f5]/60 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-colors duration-300" href="#">Press</a>
+</div>
+<div class="mt-12 md:mt-0 flex gap-6">
+<span class="material-symbols-outlined text-[#775a19]" data-icon="language">language</span>
+<span class="material-symbols-outlined text-[#775a19]" data-icon="shield_with_heart">shield_with_heart</span>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-tint": "#775a19",
+                    "on-tertiary-fixed": "#261900",
+                    "surface": "#faf9f5",
+                    "on-primary-fixed": "#261900",
+                    "surface-dim": "#dadad6",
+                    "surface-container-highest": "#e2e3df",
+                    "surface-variant": "#e2e3df",
+                    "on-tertiary": "#ffffff",
+                    "inverse-on-surface": "#f1f1ed",
+                    "surface-bright": "#faf9f5",
+                    "error-container": "#ffdad6",
+                    "outline": "#7f7667",
+                    "secondary-container": "#e2dfde",
+                    "on-primary": "#ffffff",
+                    "background": "#faf9f5",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-surface": "#1a1c1a",
+                    "on-surface-variant": "#4e4639",
+                    "on-secondary-fixed-variant": "#474746",
+                    "inverse-primary": "#e9c176",
+                    "primary": "#775a19",
+                    "surface-container-low": "#f4f4f0",
+                    "surface-container-high": "#e8e8e4",
+                    "primary-fixed": "#ffdea5",
+                    "on-error": "#ffffff",
+                    "primary-container": "#c5a059",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-container": "#636262",
+                    "on-background": "#1a1c1a",
+                    "inverse-surface": "#2f312e",
+                    "tertiary-container": "#c5a059",
+                    "surface-container": "#eeeeea",
+                    "tertiary-fixed": "#ffdea5",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "primary-fixed-dim": "#e9c176",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "secondary-fixed": "#e5e2e1",
+                    "on-tertiary-container": "#4e3700",
+                    "tertiary": "#775a19",
+                    "on-error-container": "#93000a",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-primary-container": "#4e3700",
+                    "outline-variant": "#d1c5b4"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-deep-charcoal { background-color: #1a1a1a; }
+        .text-champagne { color: #c5a059; }
+        .border-champagne { border-color: #c5a059; }
+    </style>
+</head>
+<body class="bg-deep-charcoal font-body text-[#faf9f5] selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#1a1a1a]/80 backdrop-blur-xl flex justify-between items-center px-12 py-6 w-full max-w-full">
+<div class="text-2xl font-headline italic tracking-tighter text-[#faf9f5]">PRECISION ATELIER</div>
+<div class="hidden md:flex items-center gap-12">
+<a class="font-label font-light tracking-wide uppercase text-[#faf9f5] opacity-70 hover:opacity-100 transition-opacity duration-300" href="#">Heritage</a>
+<a class="font-label font-light tracking-wide uppercase text-[#faf9f5] opacity-70 hover:opacity-100 transition-opacity duration-300" href="#">Craft</a>
+<a class="font-label font-light tracking-wide uppercase text-[#faf9f5] opacity-70 hover:opacity-100 transition-opacity duration-300" href="#">Innovation</a>
+<a class="font-label font-light tracking-wide uppercase text-[#faf9f5] opacity-70 hover:opacity-100 transition-opacity duration-300" href="#">Inventory</a>
+</div>
+<button class="bg-gradient-to-tr from-[#775a19] to-[#c5a059] px-8 py-3 text-on-primary font-label uppercase tracking-widest text-sm hover:brightness-110 transition-all">
+            Enquire
+        </button>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Header & Tabs Section -->
+<header class="mb-20">
+<div class="mb-4">
+<span class="font-label text-xs tracking-[0.2em] text-champagne uppercase">Technical Blueprint</span>
+</div>
+<h1 class="font-headline italic text-6xl md:text-8xl tracking-tight mb-12">Specifications</h1>
+<!-- Custom Tab Interface -->
+<div class="flex gap-12 overflow-x-auto no-scrollbar">
+<button class="pb-4 text-champagne border-b border-champagne font-label tracking-widest uppercase text-sm whitespace-nowrap">
+                    Materials
+                </button>
+<button class="pb-4 text-[#faf9f5] opacity-50 font-label tracking-widest uppercase text-sm whitespace-nowrap hover:opacity-100 transition-opacity">
+                    Dimensions
+                </button>
+<button class="pb-4 text-[#faf9f5] opacity-50 font-label tracking-widest uppercase text-sm whitespace-nowrap hover:opacity-100 transition-opacity">
+                    Sustainability
+                </button>
+</div>
+</header>
+<!-- Content Canvas: Asymmetric Editorial Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+<!-- Specification Data Column -->
+<div class="md:col-span-5 space-y-16">
+<div>
+<h2 class="font-headline italic text-3xl mb-8">Structural Integrity</h2>
+<div class="space-y-6">
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-label text-xs uppercase tracking-widest opacity-60">Chassis</span>
+<span class="font-body text-lg">Aerospace-Grade Titanium</span>
+</div>
+<div class="h-[1px] bg-[#faf9f5]/10 w-full group-hover:bg-champagne transition-colors"></div>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-label text-xs uppercase tracking-widest opacity-60">Bodywork</span>
+<span class="font-body text-lg">Pre-preg Carbon Fiber</span>
+</div>
+<div class="h-[1px] bg-[#faf9f5]/10 w-full group-hover:bg-champagne transition-colors"></div>
+</div>
+<div class="group">
+<div class="flex justify-between items-baseline mb-2">
+<span class="font-label text-xs uppercase tracking-widest opacity-60">Subframe</span>
+<span class="font-body text-lg">CNC Milled Aluminum 7075</span>
+</div>
+<div class="h-[1px] bg-[#faf9f5]/10 w-full group-hover:bg-champagne transition-colors"></div>
+</div>
+</div>
+</div>
+<div class="bg-[#2a2a2a] p-10">
+<h3 class="font-label text-xs uppercase tracking-[0.2em] text-champagne mb-6">Material Analysis</h3>
+<p class="font-body text-lg font-light leading-relaxed opacity-80">
+                        Our proprietary weave pattern ensures a 40% reduction in weight compared to traditional steel structures, while increasing torsional rigidity by nearly double. Every component is ultrasonically tested for micro-fractures.
+                    </p>
+<div class="mt-8 flex items-center gap-4 text-champagne">
+<span class="material-symbols-outlined" data-icon="precision_manufacturing">precision_manufacturing</span>
+<span class="font-label text-xs uppercase tracking-widest">ISO 9001 Certified Engineering</span>
+</div>
+</div>
+</div>
+<!-- Imagery Column (Bento/Masonry Hybrid) -->
+<div class="md:col-span-7 grid grid-cols-2 gap-8">
+<div class="col-span-2 aspect-[16/9] overflow-hidden">
+<img alt="Carbon fiber macro texture" class="w-full h-full object-cover grayscale brightness-75 hover:scale-105 transition-transform duration-700" data-alt="Macro close-up of high-quality weave pattern in pre-preg carbon fiber with dramatic studio lighting and sharp details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3E6WGW5Vfotp6aXYgpod_hfWC5DtSQjSoM9hz_2a2bzGd5ui2hKdbjQw7IlGm_tb8aQBWY_wSocLpRS7jgWnFsbtonTfsgZt4H6XF_mQd4Y151N8i9KhEsmkDd6r5QQNdomuK_MRMuMgPXfcOS_-roKcwUkPXVMoXqLv4-K6C89-uT722b7MNFqKVTAaUjoV937TIMaPIJxGrjUpsFacVL_zMzONmXq-FmX5D1i3pcLxEsfJ51oOHsv73KQHrzOHzeIxDhdl-GAAk"/>
+</div>
+<div class="aspect-square overflow-hidden bg-[#2a2a2a] flex items-center justify-center p-8">
+<div class="text-center">
+<div class="font-headline italic text-5xl mb-2">0.24</div>
+<div class="font-label text-xs uppercase tracking-widest opacity-60">Drag Coefficient</div>
+</div>
+</div>
+<div class="aspect-square overflow-hidden">
+<img alt="Milled aluminum detail" class="w-full h-full object-cover grayscale brightness-75" data-alt="Extreme close-up of a precision CNC milled aluminum component with tool path patterns visible under warm champagne light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkdo-ejTGgzgULnIu-jyXoDrRAxkzi59uPinBPY3XBtMNGKAITDVm5LeiZwGoaVOKTjhpt1eX6xjg6FEc_R-DSkEo7L949oeDP5CR-WJo0tt7OmKYlC9nCPKzgU6I9ZLbqktfJTAdWC2or8DBJTHdozzISCoX9HHDGVitc2ESpGyprYhb3mOK1QmxRuLEuuWj8gNf2I9TQWmtlXv10uDxZmmxGGUBVAiAIsqj6Qr08wrvMyfQgRbcZ08QPBeqeI-OvHMGqsJouF-4E"/>
+</div>
+</div>
+</section>
+<!-- Specification Detail Grid -->
+<section class="mt-32 border-t border-[#faf9f5]/10 pt-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.3em] text-champagne block mb-4">Tensile Strength</span>
+<div class="font-headline text-4xl italic">860 MPa</div>
+<p class="mt-4 font-body text-sm opacity-50 leading-relaxed">Structural titanium alloy tested beyond aerospace thresholds.</p>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.3em] text-champagne block mb-4">Thermal Threshold</span>
+<div class="font-headline text-4xl italic">1,200°C</div>
+<p class="mt-4 font-body text-sm opacity-50 leading-relaxed">Ceramic matrix composites applied to high-friction zones.</p>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.3em] text-champagne block mb-4">Precision Tolerance</span>
+<div class="font-headline text-4xl italic">±0.005mm</div>
+<p class="mt-4 font-body text-sm opacity-50 leading-relaxed">Assembly precision maintained across all chassis contact points.</p>
+</div>
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.3em] text-champagne block mb-4">Finish Layer</span>
+<div class="font-headline text-4xl italic">Micro-Ceramic</div>
+<p class="mt-4 font-body text-sm opacity-50 leading-relaxed">Non-porous surface treatment for environmental resistance.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#121212] flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-headline italic text-[#faf9f5]">PRECISION ATELIER</div>
+<p class="font-label text-xs tracking-widest uppercase opacity-40 mt-2">© 2024 Precision Atelier. All Rights Reserved.</p>
+</div>
+<div class="flex gap-12">
+<a class="font-label text-sm tracking-widest uppercase text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-300" href="#">Sustainability</a>
+<a class="font-label text-sm tracking-widest uppercase text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-300" href="#">Contact</a>
+<a class="font-label text-sm tracking-widest uppercase text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-300" href="#">Legal</a>
+<a class="font-label text-sm tracking-widest uppercase text-[#faf9f5]/60 hover:text-[#c5a059] transition-colors duration-300" href="#">Press</a>
+</div>
+<div class="mt-8 md:mt-0">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#faf9f5]/40 hover:text-champagne transition-colors cursor-pointer" data-icon="share">share</span>
+<span class="material-symbols-outlined text-[#faf9f5]/40 hover:text-champagne transition-colors cursor-pointer" data-icon="download">download</span>
+</div>
+</div>
+</footer>
+</body></html>

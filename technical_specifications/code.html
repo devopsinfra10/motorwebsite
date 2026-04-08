@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#e9c176",
+                    "on-tertiary-fixed": "#261900",
+                    "tertiary-fixed-dim": "#e9c176",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-tertiary-fixed-variant": "#5d4201",
+                    "on-primary-fixed-variant": "#5d4201",
+                    "on-error-container": "#93000a",
+                    "on-secondary": "#ffffff",
+                    "primary-container": "#c5a059",
+                    "surface-container-low": "#f4f4f0",
+                    "tertiary-container": "#c5a059",
+                    "on-error": "#ffffff",
+                    "surface-container": "#eeeeea",
+                    "outline": "#7f7667",
+                    "error": "#ba1a1a",
+                    "inverse-on-surface": "#f1f1ed",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#d1c5b4",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1a1c1a",
+                    "on-surface": "#1a1c1a",
+                    "surface-dim": "#dadad6",
+                    "on-secondary-container": "#636262",
+                    "surface-container-highest": "#e2e3df",
+                    "surface": "#faf9f5",
+                    "on-surface-variant": "#4e4639",
+                    "inverse-primary": "#e9c176",
+                    "on-primary-fixed": "#261900",
+                    "primary": "#775a19",
+                    "inverse-surface": "#2f312e",
+                    "surface-tint": "#775a19",
+                    "surface-bright": "#faf9f5",
+                    "background": "#faf9f5",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#ffdea5",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-container-high": "#e8e8e4",
+                    "on-tertiary-container": "#4e3700",
+                    "tertiary-fixed": "#ffdea5",
+                    "tertiary": "#775a19",
+                    "secondary-container": "#e2dfde",
+                    "on-primary-container": "#4e3700",
+                    "secondary-fixed": "#e5e2e1",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-primary": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "surface-variant": "#e2e3df"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .letter-spacing-tight { letter-spacing: -0.02em; }
+        .letter-spacing-label { letter-spacing: 0.1em; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-12 py-6 bg-[#faf9f5]/80 backdrop-blur-xl transition-all duration-300 ease-out">
+<div class="text-xl font-serif tracking-tighter text-[#1a1a1a]">HWASUNG MOBILITY</div>
+<!-- Navigation Links (Web) -->
+<div class="hidden md:flex items-center gap-12">
+<a class="text-[#1a1a1a] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Home</a>
+<a class="text-[#1a1a1a] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Showcase</a>
+<a class="text-[#775a19] border-b border-[#c5a059] pb-1 font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Technical</a>
+<a class="text-[#1a1a1a] font-medium hover:translate-y-[-1px] transition-all duration-300 ease-out" href="#">Testimonials</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 font-label text-sm uppercase letter-spacing-label hover:translate-y-[-1px] transition-all duration-300 shadow-[0_0_40px_rgba(119,90,25,0.05)]">
+            Enquire
+        </button>
+</nav>
+<main class="pt-32 min-h-screen">
+<!-- Hero Section: Editorial Header -->
+<section class="px-12 mb-24">
+<div class="max-w-6xl">
+<span class="block font-label text-sm uppercase letter-spacing-label text-primary mb-4">Precision Engineering</span>
+<h1 class="font-serif text-7xl md:text-9xl leading-[0.9] letter-spacing-tight mb-12">Technical <br/>Specifications.</h1>
+<p class="font-body text-xl text-secondary max-w-2xl leading-relaxed">
+                    A meticulous dissection of our performance architecture. Every component is engineered to a tolerance of microns, where traditional craftsmanship meets aerospace-grade technology.
+                </p>
+</div>
+</section>
+<!-- Technical Tabs Section -->
+<section class="bg-surface-container-low py-32">
+<div class="px-12 mx-auto">
+<div class="flex flex-col md:flex-row gap-20">
+<!-- Tab Controls -->
+<div class="w-full md:w-1/4">
+<div class="sticky top-40 space-y-8">
+<div class="flex flex-col gap-6">
+<button class="group flex items-center gap-4 text-left">
+<span class="w-12 h-[1px] bg-primary scale-x-100 origin-left transition-transform duration-500"></span>
+<span class="font-serif text-3xl text-primary">Materials</span>
+</button>
+<button class="group flex items-center gap-4 text-left">
+<span class="w-12 h-[1px] bg-outline-variant scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500"></span>
+<span class="font-serif text-3xl text-on-surface/40 group-hover:text-on-surface transition-colors duration-300">Dimensions</span>
+</button>
+<button class="group flex items-center gap-4 text-left">
+<span class="w-12 h-[1px] bg-outline-variant scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500"></span>
+<span class="font-serif text-3xl text-on-surface/40 group-hover:text-on-surface transition-colors duration-300">Sustainability</span>
+</button>
+</div>
+<div class="pt-12 border-t border-outline-variant/15">
+<p class="font-body text-sm text-on-surface-variant/70 leading-relaxed italic">
+                                    "Architecture is the reaching out for liberty through the mastery of the technical."
+                                </p>
+</div>
+</div>
+</div>
+<!-- Tab Content: Materials (Active State) -->
+<div class="w-full md:w-3/4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Card 01 -->
+<div class="bg-surface p-12 flex flex-col justify-between aspect-[4/5] shadow-[0_0_60px_rgba(0,0,0,0.02)] relative overflow-hidden group">
+<div class="relative z-10">
+<span class="font-label text-xs text-primary uppercase letter-spacing-label">Structure</span>
+<h3 class="font-serif text-4xl mt-4 mb-6">Carbon Composite 7-X</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                                        Our proprietary weave provides a strength-to-weight ratio that exceeds industry standards by 40%. It is the backbone of Hwasung's structural integrity.
+                                    </p>
+</div>
+<div class="mt-12 relative z-10">
+<div class="flex justify-between items-end border-b border-outline-variant/30 pb-4">
+<span class="font-label text-xs uppercase text-on-surface-variant/60">Tensile Strength</span>
+<span class="font-serif text-2xl">4,500 MPa</span>
+</div>
+</div>
+<div class="absolute inset-0 bg-primary/5 translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out"></div>
+</div>
+<!-- Image Component: Asymmetric Overlap -->
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-1000 grayscale hover:grayscale-0" data-alt="Close-up of high-tech carbon fiber weave pattern with soft golden light reflecting off the metallic strands, industrial luxury aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJOPFCWY-_wHtQz6vN0dsjw98IvlA8pnHcW5HDn0iRzwDmK3s35d9xPjqlPZ7XULWdnlez6CA4FMxEEiCf_HuxBDvx8NGvjks1mfIOlAFg0yEVaWG_Uf1v2fMAsvQG6Bq-ZLpKuTNXBdOzlAT7XlR44owdd2rSYAMkVldKJuhA-ZCb60OBG8xRdkGhvQfD-Z7-JQnuaEbJ-6kfLjcLi_0patydNRzt4fB0sy0JZyqtV8hDqAqIifAETCFIbKIkXpyatyoFkA9bwYiQ"/>
+</div>
+<!-- Card 02 -->
+<div class="md:col-span-2 bg-on-background p-16 text-surface flex flex-col md:flex-row gap-12 items-center">
+<div class="md:w-1/2">
+<h3 class="font-serif text-5xl mb-6 leading-tight">Graphene-Infused Thermal Shielding.</h3>
+<p class="font-body text-surface/60 leading-relaxed">
+                                        Managing heat dissipation at peak performance requires more than air-cooling. Our integrated graphene layers distribute thermal energy across the entire chassis surface.
+                                    </p>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-8">
+<div>
+<span class="block font-label text-[10px] uppercase text-primary mb-2">Conductivity</span>
+<span class="block font-serif text-3xl">5300 W/mK</span>
+</div>
+<div>
+<span class="block font-label text-[10px] uppercase text-primary mb-2">Weight Impact</span>
+<span class="block font-serif text-3xl">-12.4 kg</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Data Grid (Dimensions Context) -->
+<section class="py-32 px-12 bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<h2 class="font-serif text-6xl max-w-xl">Dimensional Accuracy.</h2>
+<div class="flex gap-4">
+<button class="material-symbols-outlined p-4 bg-surface-container-high hover:bg-primary hover:text-surface transition-colors duration-300">west</button>
+<button class="material-symbols-outlined p-4 bg-surface-container-high hover:bg-primary hover:text-surface transition-colors duration-300">east</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-outline-variant/20">
+<div class="bg-surface py-16 pr-12">
+<span class="font-label text-xs uppercase text-primary mb-8 block">Aerodynamics</span>
+<h4 class="font-serif text-4xl mb-6">Drag Coefficient</h4>
+<div class="font-serif text-8xl text-on-surface-variant/20">0.21 cx</div>
+</div>
+<div class="bg-surface py-16 px-12">
+<span class="font-label text-xs uppercase text-primary mb-8 block">Chassis</span>
+<h4 class="font-serif text-4xl mb-6">Wheelbase</h4>
+<div class="font-serif text-8xl text-on-surface-variant/20">2,850 mm</div>
+</div>
+<div class="bg-surface py-16 pl-12">
+<span class="font-label text-xs uppercase text-primary mb-8 block">Mass Balance</span>
+<h4 class="font-serif text-4xl mb-6">Weight Ratio</h4>
+<div class="font-serif text-8xl text-on-surface-variant/20">48 : 52</div>
+</div>
+</div>
+</section>
+<!-- Sustainability Feature: Full Width Image with Text Overlay -->
+<section class="relative h-[819px] flex items-center overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Minimalist abstract of sustainable energy factory at dusk, clean white architecture with soft amber lighting, futuristic clean energy concept" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ6RUSunH05z0Z88fFjDYNIn4LoLyU5vPTiQ8vy9AU-d_Th9zTan6yV-O4XUdwloDYZyri6SSx-weNetbyTgYae1lyz7faR_-xoozeCpodKkBfji30pqZPUXBDpLSILocKIXUb1Pcc6Txi0S2t6hgHp5jOaZ3OJy8w3X5yiXcnzMWZgXbs-SN024g87rNL1LPkrhZ-jYLvfJTt1SRmoQIjUSL0eWTWDYClpQkarOhQEgyNXtMZevud3J4JTflkj8deNjwl1Kut5_m2"/>
+<div class="absolute inset-0 bg-on-background/40"></div>
+<div class="relative z-10 px-12 w-full">
+<div class="max-w-3xl bg-surface/90 backdrop-blur-xl p-16">
+<span class="font-label text-sm uppercase letter-spacing-label text-primary mb-6 block">Legacy Focus</span>
+<h2 class="font-serif text-5xl mb-8 leading-tight">Circular Manufacturing Excellence.</h2>
+<p class="font-body text-on-surface-variant text-lg leading-relaxed mb-10">
+                        Sustainability is not a feature; it is the fundamental constraint of our engineering process. 94% of our chassis components are recoverable and recyclable within a closed-loop system.
+                    </p>
+<button class="group flex items-center gap-4">
+<span class="font-label text-sm uppercase letter-spacing-label font-bold">Read Sustainability Report</span>
+<span class="material-symbols-outlined group-hover:translate-x-2 transition-transform duration-300">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-12 py-16 flex flex-col md:flex-row justify-between items-start gap-8 bg-[#f4f4f0]">
+<div class="flex flex-col gap-6">
+<div class="text-2xl font-serif text-[#1a1a1a]">HWASUNG MOBILITY</div>
+<p class="max-w-xs font-body text-sm text-[#1a1a1a]/60 leading-relaxed uppercase letter-spacing-label">
+                © 2024 HWASUNG MOBILITY INDIA MANUFACTURING PVT. LTD. PRECISION ENGINEERING.
+            </p>
+</div>
+<div class="flex flex-col md:flex-row gap-16">
+<div class="flex flex-col gap-4">
+<span class="font-label text-xs uppercase text-primary font-bold mb-2">Navigation</span>
+<a class="text-[#1a1a1a]/60 hover:text-[#c5a059] transition-colors duration-200 font-body text-sm" href="#">Manufacturing Excellence</a>
+<a class="text-[#c5a059] underline font-body text-sm" href="#">Technical Specifications</a>
+<a class="text-[#1a1a1a]/60 hover:text-[#c5a059] transition-colors duration-200 font-body text-sm" href="#">Bespoke Studio</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label text-xs uppercase text-primary font-bold mb-2">Legal</span>
+<a class="text-[#1a1a1a]/60 hover:text-[#c5a059] transition-colors duration-200 font-body text-sm" href="#">Privacy Policy</a>
+<a class="text-[#1a1a1a]/60 hover:text-[#c5a059] transition-colors duration-200 font-body text-sm" href="#">Terms of Service</a>
+<a class="text-[#1a1a1a]/60 hover:text-[#c5a059] transition-colors duration-200 font-body text-sm" href="#">Contact</a>
+</div>
+</div>
+<div class="flex flex-col gap-4 items-end">
+<span class="font-label text-xs uppercase text-primary font-bold mb-2">Connect</span>
+<div class="flex gap-6">
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">public</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">precision_manufacturing</a>
+<a class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">alternate_email</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-surface-container-lowest/80 backdrop-blur-xl flex justify-around items-center py-4 px-6 z-50 border-t border-outline-variant/10">
+<button class="flex flex-col items-center gap-1 text-[#1a1a1a]/60">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label text-[10px] uppercase">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<span class="font-label text-[10px] uppercase">Technical</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#1a1a1a]/60">
+<span class="material-symbols-outlined">explore</span>
+<span class="font-label text-[10px] uppercase">Showcase</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#1a1a1a]/60">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-label text-[10px] uppercase">Contact</span>
+</button>
+</nav>
+</body></html>

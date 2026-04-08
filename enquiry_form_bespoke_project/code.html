@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-container": "#c5a059",
+                        "surface-bright": "#faf9f5",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#7f7667",
+                        "inverse-surface": "#2f312e",
+                        "on-primary-fixed": "#261900",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "secondary-fixed": "#e5e2e1",
+                        "error": "#ba1a1a",
+                        "on-primary-container": "#4e3700",
+                        "outline-variant": "#d1c5b4",
+                        "surface-dim": "#dadad6",
+                        "background": "#faf9f5",
+                        "surface-tint": "#775a19",
+                        "surface-container-highest": "#e2e3df",
+                        "surface-container": "#eeeeea",
+                        "on-tertiary-container": "#4e3700",
+                        "surface-container-high": "#e8e8e4",
+                        "on-primary-fixed-variant": "#5d4201",
+                        "on-error-container": "#93000a",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#ffdea5",
+                        "primary-container": "#c5a059",
+                        "secondary-container": "#e2dfde",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-variant": "#e2e3df",
+                        "surface": "#faf9f5",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-surface-variant": "#4e4639",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#ffdea5",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c176",
+                        "tertiary": "#775a19",
+                        "primary-fixed-dim": "#e9c176",
+                        "inverse-primary": "#e9c176",
+                        "secondary": "#5f5e5e",
+                        "on-secondary-container": "#636262",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1a1c1a",
+                        "inverse-on-surface": "#f1f1ed",
+                        "on-tertiary-fixed-variant": "#5d4201",
+                        "on-tertiary-fixed": "#261900",
+                        "on-surface": "#1a1c1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .magnetic-btn:hover span {
+            transform: translateX(4px);
+            transition: transform 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f5]/80 dark:bg-stone-950/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-12 py-6 max-w-full">
+<div class="font-['Newsreader'] font-light tracking-[0.2em] text-[#775a19] dark:text-[#c5a059] uppercase text-xl">
+                PRECISION ATELIER
+            </div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-stone-500 dark:text-stone-400 font-['Manrope'] font-medium uppercase tracking-widest text-[10px] hover:text-[#c5a059] transition-colors duration-300" href="#">Heritage</a>
+<a class="text-stone-500 dark:text-stone-400 font-['Manrope'] font-medium uppercase tracking-widest text-[10px] hover:text-[#c5a059] transition-colors duration-300" href="#">Atelier</a>
+<a class="text-stone-500 dark:text-stone-400 font-['Manrope'] font-medium uppercase tracking-widest text-[10px] hover:text-[#c5a059] transition-colors duration-300" href="#">Specifications</a>
+<a class="text-stone-500 dark:text-stone-400 font-['Manrope'] font-medium uppercase tracking-widest text-[10px] hover:text-[#c5a059] transition-colors duration-300" href="#">Innovation</a>
+</div>
+<div class="flex items-center">
+<button class="font-['Manrope'] font-medium uppercase tracking-widest text-[10px] text-[#775a19] dark:text-[#c5a059] border-b border-[#775a19] pb-1 transition-all duration-200">
+                    Inquire
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Editorial Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start mb-32">
+<div class="lg:col-span-7">
+<p class="font-label uppercase tracking-[0.3em] text-[10px] text-primary mb-8">Consultation Request</p>
+<h1 class="font-headline text-6xl md:text-8xl font-light tracking-tight text-on-surface leading-[1.1] mb-12">
+                    Begin Your <br/><span class="italic">Bespoke Project</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant font-light max-w-xl leading-relaxed">
+                    Our consultants are available for a private dossier and technical consultation.
+                </p>
+</div>
+<div class="lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="aspect-[4/5] w-full bg-surface-container overflow-hidden">
+<img alt="Precision engineering detail" class="w-full h-full object-cover grayscale opacity-80" data-alt="Close-up of a high-performance mechanical engine component with polished titanium surfaces and intricate precision-milled details in a soft studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9Zq5r-V4SW8F9_Cq-h7XFG0yyOzddm4dDaG17DZthedq8URbaNd5Ox5sHa7Otfc1xFuYMU4K-KcT7Srf39xhSzvCWdHi739zu14A_zrFwWwNI49-ae4jY8fDHWMANkD2uDEaz3JOaehj2Nqs8WsW3VJozEeGwKnYM-7LBpt0FLFJdkTglI5fAbpwBtyURoE1UDvOEgpYiVgwndc55VpwAgum_Xg5YTPoCzVP8ZJz7x-cSvFbxCb-zq55HB-35G9RkWzLMvC6Vp4Hq"/>
+</div>
+<div class="absolute -bottom-8 -left-8 p-12 bg-surface-bright hidden lg:block">
+<p class="font-headline italic text-2xl text-primary">Defining the future <br/>of mobility.</p>
+</div>
+</div>
+</div>
+<!-- Form & Contact Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-24">
+<!-- Enquiry Form -->
+<div class="lg:col-span-7">
+<form class="space-y-16">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary placeholder-transparent transition-all" id="full_name" placeholder=" " type="text"/>
+<label class="absolute left-0 -top-4 font-label uppercase tracking-widest text-[10px] text-outline transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-primary peer-focus:text-[10px]" for="full_name">Full Name</label>
+</div>
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary placeholder-transparent transition-all" id="company" placeholder=" " type="text"/>
+<label class="absolute left-0 -top-4 font-label uppercase tracking-widest text-[10px] text-outline transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-primary peer-focus:text-[10px]" for="company">Company</label>
+</div>
+</div>
+<div class="relative">
+<input class="peer w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary placeholder-transparent transition-all" id="email" placeholder=" " type="email"/>
+<label class="absolute left-0 -top-4 font-label uppercase tracking-widest text-[10px] text-outline transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-primary peer-focus:text-[10px]" for="email">Email Address</label>
+</div>
+<div class="relative">
+<textarea class="peer w-full bg-transparent border-0 border-b border-outline-variant py-4 px-0 focus:ring-0 focus:border-primary placeholder-transparent resize-none transition-all" id="project_description" placeholder=" " rows="4"></textarea>
+<label class="absolute left-0 -top-4 font-label uppercase tracking-widest text-[10px] text-outline transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:-top-4 peer-focus:text-primary peer-focus:text-[10px]" for="project_description">Project Description</label>
+</div>
+<div class="pt-8">
+<button class="magnetic-btn group relative overflow-hidden bg-gradient-to-tr from-primary to-primary-container px-12 py-6 flex items-center justify-between min-w-[280px] transition-transform duration-200 active:scale-95" type="submit">
+<span class="font-label uppercase tracking-[0.2em] text-[12px] font-semibold text-on-primary">Submit Inquiry</span>
+<span class="material-symbols-outlined text-on-primary text-xl ml-4">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Direct Contact -->
+<div class="lg:col-span-5 lg:pl-12">
+<div class="bg-surface-container-low p-12 space-y-16">
+<div>
+<h3 class="font-label uppercase tracking-[0.3em] text-[10px] text-primary mb-8">Direct Contact</h3>
+<div class="space-y-4">
+<p class="font-headline text-3xl font-light text-on-surface">atelier@precision.com</p>
+<p class="font-body text-stone-500 uppercase tracking-widest text-xs">+44 (0) 20 7946 0123</p>
+</div>
+</div>
+<div>
+<h3 class="font-label uppercase tracking-[0.3em] text-[10px] text-primary mb-8">Office Locations</h3>
+<div class="space-y-12">
+<div>
+<p class="font-body font-semibold uppercase tracking-widest text-xs mb-2">London Atelier</p>
+<p class="font-body text-stone-500 leading-relaxed text-sm">
+                                    Mayfair Design Studio<br/>
+                                    12 Savile Row, London<br/>
+                                    United Kingdom
+                                </p>
+</div>
+<div>
+<p class="font-body font-semibold uppercase tracking-widest text-xs mb-2">Zurich Technical Lab</p>
+<p class="font-body text-stone-500 leading-relaxed text-sm">
+                                    Engineering Center Nord<br/>
+                                    Bahnhofstrasse 45, Zurich<br/>
+                                    Switzerland
+                                </p>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<div class="aspect-video w-full grayscale opacity-40 bg-surface-container-high">
+<img alt="Abstract architectural map" class="w-full h-full object-cover" data-alt="An abstract minimalist aerial map showing geometric urban grids in soft sepia and bone white tones, clean architectural aesthetic" data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoN-X40IhbxUGfObEpekJfnCLD4H5eo1lRwYFWmWswnsQQofJtfSmkHsPsb-TyC7UsyifrMdVQ48if-9KRhUZ25Cc-IvoqOUelcdKhN_pW62QpCHLYv24C-zV68wMah_6jWQL-uRR5INvtJOvVq4-w5EqHTPnl3gMROdbcE9_6quZVEHo5QdgD2cFhg2JMYSdZ4h6h7ZJfH2ijXYoA1sY0-uYxfcIJ0So9f5uejdYRfVkHGDkUycps3EyvXMexf_Nv940Dxq1NdS4H"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4f0] dark:bg-stone-900 border-t border-[#e8e8e4]/20">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
+<div class="font-['Newsreader'] italic text-[#775a19] dark:text-[#c5a059] text-2xl mb-8 md:mb-0">
+                Precision Atelier
+            </div>
+<div class="flex flex-wrap justify-center gap-8 mb-8 md:mb-0">
+<a class="font-['Manrope'] text-[11px] uppercase tracking-[0.15em] text-stone-400 dark:text-stone-500 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-all opacity-80 hover:opacity-100" href="#">Legal</a>
+<a class="font-['Manrope'] text-[11px] uppercase tracking-[0.15em] text-stone-400 dark:text-stone-500 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-all opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="font-['Manrope'] text-[11px] uppercase tracking-[0.15em] text-stone-400 dark:text-stone-500 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-all opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="font-['Manrope'] text-[11px] uppercase tracking-[0.15em] text-stone-400 dark:text-stone-500 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-all opacity-80 hover:opacity-100" href="#">Sustainability</a>
+<a class="font-['Manrope'] text-[11px] uppercase tracking-[0.15em] text-stone-400 dark:text-stone-500 hover:text-[#775a19] dark:hover:text-[#c5a059] transition-all opacity-80 hover:opacity-100" href="#">Global Offices</a>
+</div>
+<div class="font-['Manrope'] text-[11px] uppercase tracking-[0.15em] text-stone-400 dark:text-stone-500">
+                © 2024 PRECISION ATELIER. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
